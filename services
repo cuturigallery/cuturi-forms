@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500&display=swap');
+#cfrm,#cfrm *{box-sizing:border-box;margin:0;padding:0}
+#cfrm{font-family:'Spartan',sans-serif;font-weight:normal;font-size:1.4rem;line-height:3.1rem;color:#010101;background:#ffffff;width:100%;padding:48px 0 80px}
+#cfrm .hdr{margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid #010101;display:block;width:100%}
+#cfrm .hdr h1{display:block;font-family:'Spartan',sans-serif;font-weight:300;font-size:clamp(1.1rem,3vw,1.35rem);letter-spacing:.18em;text-transform:uppercase;margin-bottom:16px;line-height:1.4;width:100%}
+#cfrm .hdr p{display:block;font-size:13px;line-height:1.8;color:#666666;max-width:480px;width:100%}
+#cfrm .steps{counter-reset:step;display:block;width:100%}
+#cfrm .step{display:block;width:100%}
+#cfrm .step+.step{margin-top:40px;padding-top:40px;border-top:1px solid #cccccc}
+#cfrm .slbl{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#cccccc;margin-bottom:12px;counter-increment:step;font-weight:400;display:block}
+#cfrm .slbl::before{content:"0" counter(step) " —";margin-right:8px}
+#cfrm .step h2{font-family:'Spartan',sans-serif;font-weight:300;font-size:11px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:24px;display:block}
+#cfrm label{display:block;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:#666666;margin-bottom:8px;margin-top:20px;font-weight:400}
+#cfrm label:first-of-type{margin-top:0}
+#cfrm input[type=text],#cfrm input[type=email],#cfrm input[type=tel],#cfrm textarea,#cfrm select{display:block;width:100%;background:transparent;border:none;border-bottom:1px solid #cccccc;padding:8px 0 12px;font-family:'Spartan',sans-serif;font-size:13px;font-weight:300;color:#010101;outline:none;transition:border-color .2s;appearance:none;-webkit-appearance:none;border-radius:0;letter-spacing:.02em}
+#cfrm input::placeholder,#cfrm textarea::placeholder{color:#cccccc}
+#cfrm input:focus,#cfrm textarea:focus,#cfrm select:focus{border-bottom-color:#010101}
+#cfrm textarea{resize:none;height:80px;line-height:1.7}
+#cfrm select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5'%3E%3Cpath d='M0 0l4 5 4-5z' fill='%23888'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 2px center;padding-right:20px;cursor:pointer}
+#cfrm .row2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+#cfrm .dnote{font-size:12px;color:#666666;line-height:1.7;margin-top:12px}
+#cfrm .slist{display:flex;flex-direction:column;gap:6px}
+#cfrm .sitem{display:flex;align-items:flex-start;gap:14px;padding:16px;border:1px solid #cccccc;cursor:pointer;transition:border-color .15s}
+#cfrm .sitem:hover,#cfrm .sitem.on{border-color:#010101}
+#cfrm .schk{width:14px;height:14px;border:1px solid #cccccc;margin-top:2px;flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all .15s}
+#cfrm .sitem.on .schk{background:#010101;border-color:#010101}
+#cfrm .sitem.on .schk::after{content:'';width:5px;height:3px;border-left:1px solid #fff;border-bottom:1px solid #fff;transform:rotate(-45deg) translateY(-1px);display:block}
+#cfrm .stxt h3{font-size:11px;font-weight:400;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
+#cfrm .stxt p{font-size:11px;color:#666666;line-height:1.6}
+#cfrm .sbox{background:#f5f5f5;padding:24px;margin-top:24px}
+#cfrm .srow{display:flex;justify-content:space-between;align-items:baseline;padding:10px 0;border-bottom:1px solid #cccccc;gap:16px}
+#cfrm .srow:last-child{border-bottom:none;padding-bottom:0}
+#cfrm .srow:first-child{padding-top:0}
+#cfrm .skey{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:#666666;white-space:nowrap}
+#cfrm .sval{font-size:1rem;text-align:right}
+#cfrm .sub{margin-top:36px}
+#cfrm .fp{font-size:11px;color:#666666;line-height:1.8;margin-bottom:20px}
+#cfrm .btn{width:100%;background:#010101;color:#fff;border:none;padding:16px 24px;font-family:'Spartan',sans-serif;font-size:10px;font-weight:400;letter-spacing:.25em;text-transform:uppercase;cursor:pointer;transition:opacity .2s}
+#cfrm .btn:hover{opacity:.75}
+#cfrm .btn:disabled{opacity:.35;cursor:not-allowed}
+#cfrm .err{margin-top:12px;font-size:11px;color:#a00;display:none}
+#cfrm .err.on{display:block}
+#cfrm .conf{display:none;padding:60px 0;border-top:1px solid #010101}
+#cfrm .conf.on{display:block}
+#cfrm .conf h2{font-family:'Spartan',sans-serif;font-weight:300;font-size:11px;letter-spacing:.22em;text-transform:uppercase;margin-bottom:16px}
+#cfrm .conf p{font-size:13px;color:#666666;line-height:1.8;max-width:400px}
+@media(max-width:480px){#cfrm .row2{grid-template-columns:1fr}}
